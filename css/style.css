@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Raleway", sans-serif; */
+}
+
+/*Sección inicio*/
+h1 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  padding: 1.2rem;
+}
+
+.body-inicio header h1 img{
+  position: absolute;
+  top: 1.5rem;
+  left: 5rem;
+}
+
+ul {
+  text-align: center;
+  background: rgb(200, 196, 195);
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1em;
+  font-size: 1rem;
+  margin: 0px 30px 0px 30px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(237, 240, 245);
+}
+
+.body-inicio main section h3{
+    text-align: center;
+    background: rgb(70, 69, 155);
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.ropa {
+  width: 50rem;
+  box-shadow: 0px 0px 20px 5px;
+  height: 30rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.ropa2{
+    margin-left: 1rem;
+}
+
+.wpp {
+  width: 3rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+
+footer {
+  text-align: center;
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 0.5rem;
+  margin: 1rem 0 0;
+  font-weight: bolder;
+}
+/**/
+
+/*Sección Productos*/
+.body-productos main section h3{
+  text-align: center;
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contenedor-prendas{
+  display: inline-block;
+  margin: 0 2rem 2rem;
+}
+
+.contenedor-prendas p{
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  background: #C8C4C3;
+  color: white;
+  border-radius: 1rem;
+}
+
+.prendas{
+  width: 15rem;
+  height: 15rem;
+}
+
+.body-productos main section div h4{
+  display: inline-block;
+  background: rgb(70, 69, 155);
+  color: white;
+  margin-left: 46%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+/* iframe{
+  margin: 0 37%;
+} */
+/**/
+
+/*Sección pagos*/
+.body-pagos main section .texto-pagos{
+  text-align: center;
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.body-pagos main section p b{
+padding-left: 1rem;
+}
+
+.contenedor-pagos {
+border: 1px solid black;
+display: inline-block;
+text-align: center;
+margin-left: 0.5rem;
+margin-top: 1rem;
+border-radius: 1rem;
+}
+
+.contenedor-pagos h3 {
+margin: 1rem;
+}
+
+.contenedor-pagos .img-mediosDePagos {
+width: 6rem;
+margin: 0.5rem;
+border-radius: 10px;
+height: 3.2rem;
+}
+/**/
+
+/*Sección envíos */
+.body-envios main h3 {
+  text-align: center;
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 1rem;
+}
+
+.texto-envios {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.parrafo-envios{
+  text-align: center;
+}
+
+.img-andreani {
+  width: 15rem;
+  position: relative;
+  bottom: 38px;
+  /* left: 15.5rem; */
+}
+
+.contenedor-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.logo-footer {
+  width: 2rem;
+  margin: 0.4rem;
+}
+/**/
+
+/*Sección contacto*/
+.body-contacto main h3{
+    text-align: center;
+    background: rgb(70, 69, 155);
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.body-contacto main p{
+    text-align: center;
+}
+
+form div{
+    margin: 2rem;
+    padding: 1rem;
+    width: 30rem;
+    background: rgb(200, 196, 195);
+    border-radius: 2rem;
+}
+
+form div label{
+    text-align: center;
+    color: white;
+}
+
+form input{
+    display: block;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+form select{
+    display: block;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    margin: 0.3rem;
+    border: none;
+}
+
+form textarea{
+    display: block;
+    border-radius: 0.5rem;
+    margin-top: 0.4rem;
+    border: none;
+}
+
+input[type="submit"]{
+    padding: 0.5rem 5rem;
+    background: rgb(70, 69, 155);
+    color: white;
+    border-radius: 10rem;
+}
+/**/
+
+
+
