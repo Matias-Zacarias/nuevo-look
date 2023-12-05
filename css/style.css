@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: "Raleway", sans-serif; */
 }
 
 /*Sección inicio*/
@@ -12,43 +11,55 @@ h1 {
   color: white;
   font-size: 3rem;
   padding: 1.2rem;
+  margin-bottom: 0;
 }
 
-.body-inicio header h1 img{
+.body-inicio header h1 img {
   position: absolute;
   top: 1.5rem;
   left: 5rem;
 }
 
+.body-inicio nav div img,
+.body-inicio nav div h1 {
+  display: none;
+}
+
+.body-inicio header nav,
+.container-fluid {
+  padding: 0;
+}
+
 ul {
   text-align: center;
   background: rgb(200, 196, 195);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 ul li {
-  list-style-type: none;
   display: inline-block;
   padding: 1em;
   font-size: 1rem;
   margin: 0px 30px 0px 30px;
 }
 
-ul li a {
-  text-decoration: none;
-  color: rgb(237, 240, 245);
+.body-inicio main section h3 {
+  text-align: center;
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 0;
 }
 
-.body-inicio main section h3{
-    text-align: center;
-    background: rgb(70, 69, 155);
-    color: white;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    position: sticky;
-    top: 0;
+.body-inicio main p {
+  margin: 1.2rem 5rem;
 }
 
-.ropa {
+/* .ropa {
   width: 50rem;
   box-shadow: 0px 0px 20px 5px;
   height: 30rem;
@@ -58,8 +69,20 @@ ul li a {
   border-radius: 1rem;
 }
 
-.ropa2{
-    margin-left: 1rem;
+.ropa2 {
+  margin-left: 1rem;
+} */
+
+.contenedor-img {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.ropa {
+  width: 800px;
+  margin-top: 1rem;
+  border-radius: 1rem;
 }
 
 .wpp {
@@ -69,19 +92,27 @@ ul li a {
   bottom: 1rem;
 }
 
-
 footer {
   text-align: center;
   background: rgb(70, 69, 155);
   color: white;
   padding: 0.5rem;
-  margin: 1rem 0 0;
+  margin: 1rem 0 0 0;
   font-weight: bolder;
 }
 /**/
 
 /*Sección Productos*/
-.body-productos main section h3{
+.body-productos nav div img,
+.body-productos nav div h1 {
+  display: none;
+}
+
+.body-productos header nav {
+  padding: 0;
+}
+
+.body-productos main section h3 {
   text-align: center;
   background: rgb(70, 69, 155);
   color: white;
@@ -89,42 +120,53 @@ footer {
   margin-bottom: 2rem;
 }
 
-.contenedor-prendas{
+.contenedor-prendas {
   display: inline-block;
   margin: 0 2rem 2rem;
 }
 
-.contenedor-prendas p{
+.contenedor-prendas p {
   text-align: center;
   font-size: 1.2rem;
   padding: 0.5rem;
-  background: #C8C4C3;
+  background: #c8c4c3;
   color: white;
   border-radius: 1rem;
 }
 
-.prendas{
+.prendas {
   width: 15rem;
   height: 15rem;
 }
 
-.body-productos main section div h4{
-  display: inline-block;
-  background: rgb(70, 69, 155);
-  color: white;
-  margin-left: 46%;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border-radius: 1rem;
+.body-productos main section .contenedor-ubicacion{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
-/* iframe{
-  margin: 0 37%;
-} */
+.body-productos main section .contenedor-ubicacion .text-ubi {
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
 /**/
 
 /*Sección pagos*/
-.body-pagos main section .texto-pagos{
+.body-pagos nav div img,
+.body-pagos nav div h1 {
+  display: none;
+}
+
+.body-pagos header nav {
+  padding: 0;
+}
+
+.body-pagos main section .texto-pagos {
   text-align: center;
   background: rgb(70, 69, 155);
   color: white;
@@ -132,32 +174,41 @@ footer {
   margin-bottom: 1rem;
 }
 
-.body-pagos main section p b{
-padding-left: 1rem;
+.body-pagos main section p b {
+  padding-left: 1rem;
 }
 
 .contenedor-pagos {
-border: 1px solid black;
-display: inline-block;
-text-align: center;
-margin-left: 0.5rem;
-margin-top: 1rem;
-border-radius: 1rem;
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
 }
 
 .contenedor-pagos h3 {
-margin: 1rem;
+  margin: 1rem;
 }
 
 .contenedor-pagos .img-mediosDePagos {
-width: 6rem;
-margin: 0.5rem;
-border-radius: 10px;
-height: 3.2rem;
+  width: 6rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  height: 3.2rem;
 }
 /**/
 
 /*Sección envíos */
+.body-envios nav div img,
+.body-envios nav div h1 {
+  display: none;
+}
+
+.body-envios header nav {
+  padding: 0;
+}
+
 .body-envios main h3 {
   text-align: center;
   background: rgb(70, 69, 155);
@@ -170,7 +221,7 @@ height: 3.2rem;
   text-align: center;
 }
 
-.parrafo-envios{
+.parrafo-envios {
   text-align: center;
 }
 
@@ -194,61 +245,180 @@ height: 3.2rem;
 /**/
 
 /*Sección contacto*/
-.body-contacto main h3{
-    text-align: center;
-    background: rgb(70, 69, 155);
-    color: white;
-    padding: 1rem;
-    margin-bottom: 1rem;
+.body-contacto nav div img,
+.body-contacto nav div h1 {
+  display: none;
 }
 
-.body-contacto main p{
-    text-align: center;
+.body-contacto header nav {
+  padding: 0;
 }
 
-form div{
-    margin: 2rem;
-    padding: 1rem;
-    width: 30rem;
-    background: rgb(200, 196, 195);
-    border-radius: 2rem;
+.body-contacto main h3 {
+  text-align: center;
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
-form div label{
-    text-align: center;
-    color: white;
+.body-contacto main p {
+  text-align: center;
 }
 
-form input{
-    display: block;
-    padding: 0.5rem;
-    margin: 0.3rem;
-    border-radius: 0.5rem;
-    border: none;
+form div {
+  margin: 2rem;
+  padding: 1rem;
+  width: 30rem;
+  background: rgb(200, 196, 195);
+  border-radius: 2rem;
 }
 
-form select{
-    display: block;
-    border-radius: 1rem;
-    padding: 0.2rem;
-    margin: 0.3rem;
-    border: none;
+form div label {
+  text-align: center;
+  color: white;
 }
 
-form textarea{
-    display: block;
-    border-radius: 0.5rem;
-    margin-top: 0.4rem;
-    border: none;
+form input {
+  display: block;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  border-radius: 0.5rem;
+  border: none;
 }
 
-input[type="submit"]{
-    padding: 0.5rem 5rem;
-    background: rgb(70, 69, 155);
-    color: white;
-    border-radius: 10rem;
+form select {
+  display: block;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  margin: 0.3rem;
+  border: none;
+}
+
+form textarea {
+  display: block;
+  border-radius: 0.5rem;
+  margin-top: 0.4rem;
+  border: none;
+}
+
+input[type="submit"] {
+  padding: 0.5rem 5rem;
+  background: rgb(70, 69, 155);
+  color: white;
+  border-radius: 10rem;
 }
 /**/
 
+/*Media queris*/
+
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+  .ropa {
+    width: 400px;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 768px) {
+  /*Sección inicio*/
+
+  .body-inicio header h1 {
+    display: none;
+  }
+
+  .body-inicio nav div img,
+  .body-inicio nav div h1 {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .body-productos nav div img,
+  .body-productos nav div h1 {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .body-pagos nav div img,
+  .body-pagos nav div h1 {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .body-contacto nav div img,
+  .body-contacto nav div h1 {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .body-envios nav div img,
+  .body-envios nav div h1 {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .container-fluid {
+    background-color: black;
+    padding: 16px 0 10px 0;
+  }
+
+  .navbar-toggler {
+    background-color: white;
+    margin-right: 8px;
+  }
+
+  .menu-icon {
+    background-image: url(../assets/menu.png);
+  }
+
+  ul {
+    background: black;
+  }
+
+  .color-letras {
+    color: white;
+  }
+
+  .body-inicio main section h3,
+  main section h3 {
+    font-size: 1rem;
+    position: static;
+  }
+
+  .body-inicio main p {
+    margin: 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* .contenedor-img{
+    display: flex;
+  } */
+
+  .contenedor-img {
+    display: grid;
+    gap: 0;
+  }
+
+  .ropa {
+    width: 80vw;
+    height: 30vh;
+    box-shadow: none;
+  }
+
+.contenedor-footer {
+  position: static;
+}
+
+/*Sección Productos*/
+  main section div h4{
+    font-size: 1rem;
+    position: static;
+    display: block;
+  }
+
+  iframe {
+    width: 90%;
+  }
 
 
+}

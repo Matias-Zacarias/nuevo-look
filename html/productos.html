@@ -15,7 +15,7 @@
 
 <body class="body-productos">
     <header>
-        <nav>
+        <!-- <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
@@ -23,7 +23,38 @@
                 <li><a href="envios.html">Envios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="../assets/icono-ropa.png" alt="icono remera">
+                <h1>NUEVO LOOK</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" aria-current="page" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" href="pagos.html">Pagos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" href="envios.html">Envíos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
     <main>
         <section>
@@ -84,15 +115,14 @@
                 </div>
             </center>
 
-            <div>
-                <h4>Nuestra ubicación</h4>
-                <center>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7079.046288748055!2d-58.784875806420935!3d-27.484101299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b75e3b960cf%3A0x1015704d38a7d5da!2sTienda%20de%20Ropas%20%22LaChiru%22!5e0!3m2!1ses-419!2sar!4v1699402078078!5m2!1ses-419!2sar"
-                        width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </center>
-
+            <div class="contenedor-ubicacion">
+                <h4 class="text-ubi">Nuestra ubicación</h4>
+            </div>
+            <div class="contenedor-ubicacion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7079.046288748055!2d-58.784875806420935!3d-27.484101299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b75e3b960cf%3A0x1015704d38a7d5da!2sTienda%20de%20Ropas%20%22LaChiru%22!5e0!3m2!1ses-419!2sar!4v1699402078078!5m2!1ses-419!2sar"
+                    width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </section>
@@ -118,7 +148,7 @@
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

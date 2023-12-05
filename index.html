@@ -22,7 +22,7 @@
         <h1>NUEVO LOOK
             <img src="assets/icono-ropa.png" alt="icono remera">
         </h1>
-        <nav>
+        <!-- <nav>
             <div class="contenedor-navegacion">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -33,44 +33,78 @@
                 </ul>
             </div>
 
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <img src="assets/icono-ropa.png" alt="icono remera">
+
+                <h1>NUEVO LOOK</h1>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon menu-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" href="html/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" href="html/pagos.html">Pagos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" href="html/envios.html">Envíos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" href="html/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
     <main>
         <section>
             <h3>Bienvenido a nuestra tienda online</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Soluta quae laborum aliquid odio cupiditate, consectetur
-                voluptas quod, a facere quam explicabo. Et, facilis aliquid
-                quas quod quidem velit, corporis quis voluptas aliquam eum
-                esse architecto officia est omnis ea debitis!. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Rem architecto
-                quas esse fugiat maxime exercitationem rerum delectus
-                doloremque quod, ratione non beatae illum odio vero sint labore
-                officiis eum harum cupiditate, culpa praesentium. Nihil enim
-                dolorum ab velit doloremque adipisci?
+                Tu destino de moda donde la elegancia y la comodidad se encuentran. Nos enorgullece ofrecer una
+                amplia selección de ropa para hombres, mujeres y niños de todas las edades. En Nuevo Look, creemos
+                que la moda es para todos, sin importar tu edad, género o estilo personal.
+            </p>
+            <p>
+                Descubre nuestras últimas colecciones, diseñadas para abrazar la diversidad y celebrar la
+                individualidad. Desde tendencias modernas hasta clásicos atemporales, encontrarás prendas que se
+                adaptan a tu estilo único. Nuestro compromiso con la calidad garantiza que cada prenda no solo
+                te haga lucir bien, sino que también te haga sentir bien.
+            </p>
+            <p>
+                En Nuevo Look, nos esforzamos por crear una experiencia de compra agradable y sin
+                complicaciones. Nuestro amable equipo está aquí para ayudarte a encontrar la ropa perfecta que se
+                ajuste a tu estilo de vida y necesidades. Ya sea que estés buscando un atuendo casual para el
+                día a día, ropa elegante para ocasiones especiales o prendas cómodas para los más pequeños,
+                ¡tenemos todo lo que necesitas!
             </p>
 
-            <center>
-                <div>
-                    <img src="assets/ropas.jpg" class="ropa" alt="ropas">
-                    <img src="assets/ropa2.jpg" class="ropa ropa2" alt="ropa">
-                </div>
-            </center>
+            <div class="contenedor-img">
+                <img src="assets/ropas.jpg" class="ropa" alt="ropas">
+                <img src="assets/ropa2.jpg" class="ropa" alt="ropa">
+            </div>
 
-            <center>
-                <div>
-                    <img src="assets/Camisas.jpg" class="ropa" alt="Camisaas">
-                    <img src="assets/jeans.jpg" class="ropa ropa2" alt="jeans">
-                </div>
-            </center>
+            <div class="contenedor-img">
+                <img src="assets/Camisas.jpg" class="ropa" alt="Camisaas">
+                <img src="assets/jeans.jpg" class="ropa" alt="jeans">
+            </div>
 
-            <center>
-                <div>
-                    <img src="assets/Ropa-deportiva.jpg" class="ropa" alt="Dos personas haciendo deporte">
-                    <img src="assets/ropa-deporte.jpg" class="ropa ropa2" alt="Ropa deportiva">
-                </div>
-            </center>
+            <div class="contenedor-img">
+                <img src="assets/Ropa-deportiva.jpg" class="ropa" alt="Dos personas haciendo deporte">
+                <img src="assets/ropa-deporte.jpg" class="ropa" alt="Ropa deportiva">
+            </div>
             <a href="https://web.whatsapp.com/" target="_blank"><img src="assets/whatsapp.png" alt="whatsapp"
                     class="wpp"></a>
         </section>
@@ -92,7 +126,7 @@
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
