@@ -16,20 +16,12 @@
 
 <body class="body-contacto">
     <header>
-        <!-- <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="pagos.html">Pagos</a></li>
-                <li><a href="envios.html">Envios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav> -->
-
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <img src="../assets/icono-ropa.png" alt="icono remera">
-                <h1>NUEVO LOOK</h1>
+                <img class="icono" src="../assets/icono-ropa.png" alt="icono remera">
+                
+                <h1 class="titulo">NUEVO LOOK</h1>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -55,7 +47,6 @@
                 </div>
             </div>
         </nav>
-
     </header>
 
     <main>
@@ -68,9 +59,8 @@
             </p>
         </section>
 
-        <form>
-
-            <center>
+        <div class="contenedor-form">
+            <form>
                 <div>
                     <label for="nombre"><b>Nombre</b></label>
                     <input type="text" name="nombre" placeholder="Escribe tu nombre.." required>
@@ -94,10 +84,10 @@
                     <br>
                     <input type="submit" value="Enviar">
                 </div>
-            </center>
-
-        </form>
+            </form>
+        </div>
     </main>
+    
     <div class="contenedor-footer">
         <footer>
             Contactános <br>
