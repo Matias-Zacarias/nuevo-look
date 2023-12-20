@@ -1,0 +1,29 @@
+/*Main-envios*/
+
+.main-envios {
+  section {
+    h3 {
+      text-align: map-get($map: $estilo-primario, $key: texto-centrado);
+      background: $color-primario;
+      color: nth($list: $colores, $n: 1);
+      padding: map-get($map: $estilo-primario, $key: medida-primaria);
+      font-size: $font-size-h3-primario;
+    }
+    .texto-envios {
+      margin: 1rem 0;
+      text-align: map-get($map: $estilo-primario, $key: texto-centrado);
+      font-size: 1.2rem;
+    }
+    .parrafo-envios {
+      text-align: map-get($map: $estilo-primario, $key: texto-centrado);
+    }
+    .contendor-img-andreani {
+      @include flex(row, center, none);
+      .img-andreani {
+        width: 15rem;
+        position: relative;
+        bottom: 38px;
+      }
+    }
+  }
+}

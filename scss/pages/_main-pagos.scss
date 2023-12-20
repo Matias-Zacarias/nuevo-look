@@ -1,0 +1,45 @@
+/*Main-pagos*/
+
+.main-pagos {
+  section {
+    .texto-pagos {
+      text-align: map-get($map: $estilo-primario, $key: texto-centrado);
+      background: $color-primario;
+      color: nth($list: $colores, $n: 1);
+      padding: map-get($map: $estilo-primario, $key: medida-primaria);
+      margin-bottom: map-get($map: $estilo-primario, $key: medida-primaria);
+      font-size: $font-size-h3-primario;
+    }
+    p {
+      b {
+        display: block;
+        text-align: map-get($map: $estilo-primario, $key: texto-centrado);
+      }
+    }
+    .contenedor-flex {
+      display: flex;
+      justify-content: center;
+      .contenedor-pagos {
+        border: 1px solid black;
+        display: inline-block;
+        text-align: map-get($map: $estilo-primario, $key: texto-centrado);
+        margin-top: map-get($map: $estilo-primario, $key: medida-primaria);
+        border-radius: map-get($map: $estilo-primario, $key: medida-primaria);
+        h3 {
+          margin: 1rem 0;
+          font-size: $font-size-h3-primario;
+        }
+        .contenedor-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          .img-mediosDePagos {
+            width: 6rem;
+            margin: 0.5rem;
+            border-radius: 10px;
+            height: 3.2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+/*Main-index*/
+
+.main-index {
+  section {
+    h3 {
+      text-align: map-get($map: $estilo-primario, $key: texto-centrado);
+      background: $color-primario;
+      color: white;
+      padding: map-get($map: $estilo-primario, $key: medida-primaria);
+      margin-bottom: map-get($map: $estilo-primario, $key: medida-primaria);
+      position: sticky;
+      top: 0;
+      font-size: $font-size-h3-primario;
+    }
+    p {
+      margin: 1.2rem 5rem;
+    }
+    .contenedor-img {
+      display: flex;
+      justify-content: center;
+      gap: map-get($map: $estilo-primario, $key: medida-primaria);
+      .ropa {
+        width: 770px;
+        margin-top: map-get($map: $estilo-primario, $key: medida-primaria);
+        border-radius: map-get($map: $estilo-primario, $key: medida-primaria);
+      }
+    }
+    .wpp {
+      width: 3rem;
+      position: fixed;
+      right: map-get($map: $estilo-primario, $key: medida-primaria);
+      bottom: map-get($map: $estilo-primario, $key: medida-primaria);
+    }
+  }
+}

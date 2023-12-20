@@ -1,0 +1,19 @@
+//Estos archivos que están acá van a poder ser tomados
+//por todos los archivos que están debajo y no hace
+//falta que lo importe, por eso es importante el orden.
+@import "utilities/reset";
+@import "utilities/variables";
+@import "utilities/listas";
+@import "utilities/mapas";
+@import "utilities/mixin";
+
+@import "components/header";
+@import "components/footer";
+
+@import "pages/main-index";
+@import "pages/main-productos";
+@import "pages/main-pagos";
+@import "pages/main-envios";
+@import "pages/main-contacto";
+
+@import "utilities/media-queries";

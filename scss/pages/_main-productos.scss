@@ -1,0 +1,48 @@
+/*Main-productos*/
+
+.main-productos {
+  section {
+    h3 {
+      text-align: map-get($map: $estilo-primario, $key: texto-centrado);
+      background: $color-primario;
+      color: nth($list: $colores, $n: 1);
+      padding: map-get($map: $estilo-primario, $key: medida-primaria);
+      margin-bottom: 2rem;
+      font-size: $font-size-h3-primario;
+      position: sticky;
+      top: 0;
+    }
+    .contenedor-prendas {
+      margin: 0 2rem 2rem;
+      @include grid(repeat(5, 1fr), 3rem);
+      justify-items: center;
+      div {
+        border: 1px solid rgb(174, 174, 174);
+        @include flex(column, none, center);
+        p {
+          text-align: map-get($map: $estilo-primario, $key: texto-centrado);
+          font-size: map-get($map: $estilo-primario, $key: medida-primaria);
+          padding: 0.5rem;
+          background: nth($list: $colores, $n: 2);
+          color: nth($list: $colores, $n: 1);
+          width: 100%;
+          margin-bottom: 0;
+        }
+        .prendas {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .contenedor-ubicacion {
+      @include flex(column, none, center);
+      .text-ubi {
+        background: $color-primario;
+        color: nth($list: $colores, $n: 1);
+        padding: map-get($map: $estilo-primario, $key: medida-primaria);
+        border-radius: map-get($map: $estilo-primario, $key: medida-primaria);
+        margin-bottom: map-get($map: $estilo-primario, $key: medida-primaria);
+      }
+    }
+  }
+}

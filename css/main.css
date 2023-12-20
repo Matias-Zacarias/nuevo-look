@@ -1,0 +1,461 @@
+@charset "UTF-8";
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Header*/
+header h1 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  padding: 1.2rem;
+  margin-bottom: 0;
+}
+header h1 img {
+  position: absolute;
+  top: 1.5rem;
+  left: 5rem;
+}
+header .navbar {
+  padding: 0;
+}
+header .navbar .container-fluid {
+  padding: 0;
+}
+header .navbar .container-fluid .icono-mobile, header .navbar .container-fluid .titulo-mobile {
+  display: none;
+}
+header .navbar .container-fluid .navbar-toggler {
+  line-height: 1;
+}
+header .navbar .container-fluid div ul {
+  text-align: center;
+  background: #747d8c;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+}
+header .navbar .container-fluid div ul .nav-item {
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 0px 30px 0px 30px;
+}
+header .navbar .container-fluid div ul .nav-item .color-letras {
+  color: white;
+}
+header .navbar .container-fluid div ul .nav-item .color-letras:hover {
+  color: #dfe6e9;
+}
+header .navbar .container-fluid div ul .nav-item .color-letras:active {
+  color: #636e72;
+}
+
+/*Footer*/
+.body-contacto .contenedor-footer {
+  position: static;
+}
+
+.contenedor-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 0.5rem;
+  margin: 1rem 0 0 0;
+  font-weight: bolder;
+}
+footer a .logo-footer {
+  width: 2rem;
+  margin: 0.4rem;
+}
+
+/*Main-index*/
+.main-index section h3 {
+  text-align: center;
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  font-size: 1.2rem;
+}
+.main-index section p {
+  margin: 1.2rem 5rem;
+}
+.main-index section .contenedor-img {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.main-index section .contenedor-img .ropa {
+  width: 770px;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.main-index section .wpp {
+  width: 3rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+/*Main-productos*/
+.main-productos section h3 {
+  text-align: center;
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+}
+.main-productos section .contenedor-prendas {
+  margin: 0 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+  justify-items: center;
+}
+.main-productos section .contenedor-prendas div {
+  border: 1px solid rgb(174, 174, 174);
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+.main-productos section .contenedor-prendas div p {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background: #747d8c;
+  color: white;
+  width: 100%;
+  margin-bottom: 0;
+}
+.main-productos section .contenedor-prendas div .prendas {
+  width: 100%;
+  height: 100%;
+}
+.main-productos section .contenedor-ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+.main-productos section .contenedor-ubicacion .text-ubi {
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*Main-pagos*/
+.main-pagos section .texto-pagos {
+  text-align: center;
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.main-pagos section p b {
+  display: block;
+  text-align: center;
+}
+.main-pagos section .contenedor-flex {
+  display: flex;
+  justify-content: center;
+}
+.main-pagos section .contenedor-flex .contenedor-pagos {
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.main-pagos section .contenedor-flex .contenedor-pagos h3 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.main-pagos section .contenedor-flex .contenedor-pagos .contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main-pagos section .contenedor-flex .contenedor-pagos .contenedor-grid .img-mediosDePagos {
+  width: 6rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  height: 3.2rem;
+}
+
+/*Main-envios*/
+.main-envios section h3 {
+  text-align: center;
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.main-envios section .texto-envios {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.main-envios section .parrafo-envios {
+  text-align: center;
+}
+.main-envios section .contendor-img-andreani {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+}
+.main-envios section .contendor-img-andreani .img-andreani {
+  width: 15rem;
+  position: relative;
+  bottom: 38px;
+}
+
+/*Main-contacto*/
+.main-contacto section h3 {
+  text-align: center;
+  background: rgb(70, 69, 155);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+}
+.main-contacto section p {
+  text-align: center;
+}
+.main-contacto .contenedor-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+}
+.main-contacto .contenedor-form form div {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: 30rem;
+  background: #747d8c;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-contacto .contenedor-form form div label {
+  color: white;
+}
+.main-contacto .contenedor-form form div input {
+  padding: 0.5rem;
+  margin: 0.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 60%;
+}
+.main-contacto .contenedor-form form div input[type=submit] {
+  background: rgb(70, 69, 155);
+  color: white;
+  border-radius: 10rem;
+  width: 40%;
+}
+.main-contacto .contenedor-form form div select {
+  border-radius: 1rem;
+  padding: 0.2rem;
+  margin: 0.3rem;
+  border: none;
+}
+.main-contacto .contenedor-form form div textarea {
+  border-radius: 0.5rem;
+  margin-top: 0.4rem;
+  border: none;
+  width: 60%;
+  padding: 0.5rem;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1600px) {
+  .main-index section .contenedor-img .ropa {
+    width: 450px;
+  }
+}
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+  /*Seccíon Inicio*/
+  .main-index section .contenedor-img .ropa {
+    width: 350px;
+  }
+  /*-----------------------*/
+  /*Sección Productos*/
+  .main-productos section .contenedor-prendas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+/*-----------------------*/
+@media screen and (max-width: 991px) {
+  header h1 {
+    display: none;
+  }
+  header .navbar .container-fluid {
+    background-color: black;
+    padding: 16px 0 10px 0;
+  }
+  header .navbar .container-fluid .icono-mobile,
+  header .navbar .container-fluid .titulo-mobile {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0;
+  }
+  header .navbar .container-fluid .navbar-toggler {
+    background-color: white;
+    margin-right: 8px;
+    padding: 0 0.3rem;
+  }
+  header .navbar .container-fluid div ul {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+  }
+}
+/*Mobile*/
+@media screen and (max-width: 768px) {
+  header .navbar .container-fluid .navbar-toggler .menu-icon {
+    background-image: url(../assets/menu.png);
+    font-size: 1rem;
+  }
+  /*-----------------------*/
+  /*Sección-index*/
+  .main-index section h3 {
+    font-size: 1rem;
+    position: static;
+  }
+  .main-index section p {
+    margin: 1rem;
+    font-size: 0.9rem;
+  }
+  .main-index section .contenedor-img {
+    display: grid;
+    gap: 0;
+  }
+  .main-index section .contenedor-img .ropa {
+    width: 80vw;
+  }
+  .main-index section .contenedor-img .jeans {
+    height: 60vw;
+  }
+  /*-----------------------*/
+  /*Sección-Productos*/
+  .main-productos section h3 {
+    position: static;
+  }
+  .main-productos section .contenedor-prendas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .main-productos section .contenedor-text {
+    margin: 6rem 0 1rem;
+  }
+  .main-productos section .contenedor-ubicacion iframe {
+    width: 90%;
+  }
+  /*-----------------------*/
+  /*Sección-Envíos*/
+  .main-envios section .texto-envios {
+    font-size: 1rem;
+    position: static;
+    display: block;
+  }
+  .main-envios section .parrafo-envios {
+    font-size: 0.9rem;
+    margin: 0 1.2rem;
+  }
+  .main-envios section .contendor-img-andreani {
+    display: flex;
+    justify-content: center;
+  }
+  .main-envios section .contendor-img-andreani .img-andreani {
+    width: 15rem;
+    position: relative;
+    bottom: 38px;
+  }
+  .body-envios .contenedor-footer {
+    position: static;
+  }
+  /*-----------------------*/
+  /*Sección-Pagos*/
+  .main-pagos section h3 {
+    position: static;
+  }
+  .main-pagos section p b {
+    margin: 1rem;
+  }
+  .main-pagos section .contenedor-flex .contenedor-pagos .contenedor-grid .img-mediosDePagos {
+    width: 3rem;
+    height: 2rem;
+  }
+  .body-pagos .contenedor-footer {
+    position: absolute;
+    width: 100%;
+  }
+  /*-----------------------*/
+  /*Sección-Contacto*/
+  .main-contacto section h3 {
+    position: static;
+  }
+  .main-contacto section p {
+    font-size: 0.9rem;
+    margin: 1rem;
+  }
+  .main-contacto .contenedor-form form div {
+    width: 22rem;
+  }
+  .main-contacto .contenedor-form form div input,
+  .main-contacto .contenedor-form form div textarea {
+    width: 85%;
+  }
+  .main-contacto .contenedor-form form div inputtextarea::placeholder,
+  .main-contacto .contenedor-form form div textareatextarea::placeholder {
+    font-size: 0.9rem;
+  }
+}
+/*-----------------------*/
+@media screen and (max-width: 450px) {
+  /*Sección Productos*/
+  .main-productos section .contenedor-prendas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  /*-----------------------*/
+  /*Sección-Contacto*/
+  .main-contacto .contenedor-form form div {
+    width: 18rem;
+  }
+  /*-----------------------*/
+}
+
+/*# sourceMappingURL=main.css.map */

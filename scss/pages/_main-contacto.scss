@@ -1,0 +1,62 @@
+/*Main-contacto*/
+
+.main-contacto {
+  section {
+    h3 {
+      text-align: map-get($map: $estilo-primario, $key: texto-centrado);
+      background: $color-primario;
+      color: nth($list: $colores, $n: 1);
+      padding: map-get($map: $estilo-primario, $key: medida-primaria);
+      margin-bottom: map-get($map: $estilo-primario, $key: medida-primaria);
+      font-size: $font-size-h3-primario;
+      position: sticky;
+      top: 0;
+    }
+    p {
+      text-align: map-get($map: $estilo-primario, $key: texto-centrado);
+    }
+  }
+  .contenedor-form {
+    @include flex(row, center, none);
+    form {
+      div {
+        margin-bottom: 2rem;
+        padding: map-get($map: $estilo-primario, $key: medida-primaria);
+        width: 30rem;
+        background: nth($list: $colores, $n: 2);
+        border-radius: 2rem;
+        @include flex(column, center, center);
+        //align-items: center;
+        label {
+          color: nth($list: $colores, $n: 1);
+        }
+        input {
+          padding: 0.5rem;
+          margin: 0.3rem;
+          border-radius: 0.5rem;
+          border: none;
+          width: 60%;
+          &[type="submit"] {
+            background: $color-primario;
+            color: nth($list: $colores, $n: 1);
+            border-radius: 10rem;
+            width: 40%;
+          }
+        }
+        select {
+          border-radius: map-get($map: $estilo-primario, $key: medida-primaria);
+          padding: 0.2rem;
+          margin: 0.3rem;
+          border: none;
+        }
+        textarea {
+          border-radius: 0.5rem;
+          margin-top: 0.4rem;
+          border: none;
+          width: 60%;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
