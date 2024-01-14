@@ -96,6 +96,7 @@ footer a .logo-footer:hover {
   position: sticky;
   top: 0;
   font-size: 1.2rem;
+  z-index: 1;
 }
 .main-index section p {
   margin: 1.2rem 5rem;
@@ -127,6 +128,7 @@ footer a .logo-footer:hover {
   font-size: 1.2rem;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 .main-productos section .contenedor-prendas {
   margin: 0 2rem 2rem;
