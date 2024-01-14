@@ -20,7 +20,13 @@ footer {
   a {
     .logo-footer {
       width: 2rem;
-      margin: 0.4rem;
+      margin: 0.3rem 0.5rem 1rem;
+      transition: all 0.3s;
+      &:hover{
+        width: 2.6rem;
+        margin: 0.8;
+        transition: 0.3s;
+      }
     }
   }
 }

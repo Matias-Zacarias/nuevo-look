@@ -158,14 +158,18 @@
     }
   }
 
-  .body-envios .contenedor-footer {
-    position: map-get($map: $estilo-primario, $key: position-primario);
+  .body-envios {
+    .contenedor-footer {
+      position: map-get($map: $estilo-primario, $key: position-primario);
+    }
   }
+
   /*-----------------------*/
 
   /*Sección-Pagos*/
 
   .main-pagos {
+    margin-bottom: 20rem;
     section {
       h3 {
         position: map-get($map: $estilo-primario, $key: position-primario);
@@ -190,8 +194,8 @@
 
   .body-pagos {
     .contenedor-footer {
-      position: absolute;
-      width: 100%;
+      position: map-get($map: $estilo-primario, $key: position-primario);
+      //width: 100%;
     }
   }
   /*-----------------------*/

@@ -77,7 +77,13 @@ footer {
 }
 footer a .logo-footer {
   width: 2rem;
-  margin: 0.4rem;
+  margin: 0.3rem 0.5rem 1rem;
+  transition: all 0.3s;
+}
+footer a .logo-footer:hover {
+  width: 2.6rem;
+  margin: 0.8;
+  transition: 0.3s;
 }
 
 /*Main-index*/
@@ -407,6 +413,9 @@ footer a .logo-footer {
   }
   /*-----------------------*/
   /*Sección-Pagos*/
+  .main-pagos {
+    margin-bottom: 20rem;
+  }
   .main-pagos section h3 {
     position: static;
   }
@@ -418,8 +427,7 @@ footer a .logo-footer {
     height: 2rem;
   }
   .body-pagos .contenedor-footer {
-    position: absolute;
-    width: 100%;
+    position: static;
   }
   /*-----------------------*/
   /*Sección-Contacto*/
