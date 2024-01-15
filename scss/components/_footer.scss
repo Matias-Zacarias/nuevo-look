@@ -1,13 +1,9 @@
 /*Footer*/
 
-.body-contacto .contenedor-footer {
-  position: map-get($map: $estilo-primario, $key: position-primario);
-}
-
-.contenedor-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.body-contacto {
+  .contenedor-footer {
+    position: map-get($map: $estilo-primario, $key: position-primario);
+  }
 }
 
 footer {
@@ -22,11 +18,23 @@ footer {
       width: 2rem;
       margin: 0.3rem 0.5rem 1rem;
       transition: all 0.3s;
-      &:hover{
+      &:hover {
         width: 2.6rem;
         margin: 0.8;
         transition: 0.3s;
       }
     }
+  }
+}
+
+.body-pagos {
+  footer {
+    margin-top: 16rem;
+  }
+}
+
+.body-envios {
+  footer {
+    margin-top: 10rem;
   }
 }

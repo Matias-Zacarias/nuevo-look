@@ -11,6 +11,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/main.css">
+    <!-- Link AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 
@@ -57,17 +59,17 @@
 
     <main class="main-envios">
         <section>
-            <h3>Envíos</h3>
+            <h3 data-aos="zoom-in">Envíos</h3>
 
-            <h4 class="texto-envios">Envíos a Corrientes, Argentina</h4>
-            <p class="parrafo-envios">
+            <h4 data-aos="zoom-in" class="texto-envios">Envíos a Corrientes, Argentina</h4>
+            <p data-aos="zoom-in" class="parrafo-envios">
                 En el plazo de 24 a 72 horas de acrecitado el pago, te estaremos
                 solicitando los datos para la entrega, luego los chicos de
                 transporte se pondran en contacto con vos para coordinar día y horario.
             </p>
 
-            <h4 class="texto-envios">Envíos al resto del país</h4>
-            <p class="parrafo-envios">
+            <h4 data-aos="zoom-in" class="texto-envios">Envíos al resto del país</h4>
+            <p data-aos="zoom-in" class="parrafo-envios">
                 En el plazo de 24 horas de acrecitado el pago, recibirás un mail
                 con un número de seguimiento de tu compra y los pasos para poder
                 realizar el seguimiento. <br> Demora en llegar entre 5 a 10 días hábiles.
@@ -76,41 +78,45 @@
                 retirarlo.
             </p>
 
-            <h4 class="texto-envios">¿Que sucede si vence el plazo y no fui a retirar mi compra?</h4>
-            <p class="parrafo-envios">
+            <h4 data-aos="zoom-in" class="texto-envios">¿Que sucede si vence el plazo y no fui a retirar mi compra?</h4>
+            <p data-aos="zoom-in" class="parrafo-envios">
                 Vencido el plazo vuelve al remitente, pero no te preocupes, nos
                 pondremos en contacto con vos para reenviarlo (costo a cargo del cliente).
             </p>
-            <h4 class="texto-envios">¿Los envíos son a travéz de?</h4>
+            <h4 data-aos="zoom-in" class="texto-envios">¿Los envíos son a travéz de?</h4>
 
-            <div class="contendor-img-andreani">
+            <div data-aos="zoom-in" class="contendor-img-andreani">
                 <img src="../assets/andreani.png" alt="imagen Andreani" class="img-andreani">
             </div>
 
         </section>
     </main>
 
-    <div class="contenedor-footer">
-        <footer>
-            <p>Contactános</p>
-            <a href="https://es-la.facebook.com/" target="_blank"><img class="logo-footer"
-                    src="../assets/logos-redes/facebook.png" alt="Logo Facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img class="logo-footer"
-                    src="../assets/logos-redes/instagram.png" alt="Logo Instagram"></a>
-            <a href="https://twitter.com/" target="_blank"><img class="logo-footer"
-                    src="../assets/logos-redes/twitter.png" alt="Logo Twitter"></a>
-            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img class="logo-footer"
-                    src="../assets/logos-redes/gmail.png" alt="Logo Gmail"></a>
-            <a href="https://web.whatsapp.com/" target="_blank"><img class="logo-footer" src="../assets/whatsapp.png"
-                    alt="Logo Whatsapp"></a>
-            <p>Copyright © 2023 - Todos los derechos reservados</p>
-        </footer>
-    </div>
+    <footer data-aos="zoom-in">
+        <p>Contactános</p>
+        <a href="https://es-la.facebook.com/" target="_blank"><img class="logo-footer"
+                src="../assets/logos-redes/facebook.png" alt="Logo Facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="logo-footer"
+                src="../assets/logos-redes/instagram.png" alt="Logo Instagram"></a>
+        <a href="https://twitter.com/" target="_blank"><img class="logo-footer" src="../assets/logos-redes/twitter.png"
+                alt="Logo Twitter"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img class="logo-footer"
+                src="../assets/logos-redes/gmail.png" alt="Logo Gmail"></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><img class="logo-footer" src="../assets/whatsapp.png"
+                alt="Logo Whatsapp"></a>
+        <p>Copyright © 2023 - Todos los derechos reservados</p>
+    </footer>
 
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
+    <!-- Script AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

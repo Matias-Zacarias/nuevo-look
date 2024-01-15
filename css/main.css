@@ -61,12 +61,6 @@ header .navbar .container-fluid div ul .nav-item .color-letras:active {
   position: static;
 }
 
-.contenedor-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 footer {
   text-align: center;
   background: rgb(70, 69, 155);
@@ -84,6 +78,14 @@ footer a .logo-footer:hover {
   width: 2.6rem;
   margin: 0.8;
   transition: 0.3s;
+}
+
+.body-pagos footer {
+  margin-top: 16rem;
+}
+
+.body-envios footer {
+  margin-top: 10rem;
 }
 
 /*Main-index*/
@@ -110,12 +112,6 @@ footer a .logo-footer:hover {
   width: 770px;
   margin-top: 1rem;
   border-radius: 1rem;
-}
-.main-index section .wpp {
-  width: 3rem;
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
 }
 
 /*Main-productos*/
@@ -410,8 +406,8 @@ footer a .logo-footer:hover {
     position: relative;
     bottom: 38px;
   }
-  .body-envios .contenedor-footer {
-    position: static;
+  .body-envios footer {
+    margin-top: 5rem;
   }
   /*-----------------------*/
   /*Sección-Pagos*/
@@ -427,9 +423,6 @@ footer a .logo-footer:hover {
   .main-pagos section .contenedor-flex .contenedor-pagos .contenedor-grid .img-mediosDePagos {
     width: 3rem;
     height: 2rem;
-  }
-  .body-pagos .contenedor-footer {
-    position: static;
   }
   /*-----------------------*/
   /*Sección-Contacto*/

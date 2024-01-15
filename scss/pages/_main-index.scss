@@ -26,11 +26,5 @@
         border-radius: map-get($map: $estilo-primario, $key: medida-primaria);
       }
     }
-    .wpp {
-      width: 3rem;
-      position: fixed;
-      right: map-get($map: $estilo-primario, $key: medida-primaria);
-      bottom: map-get($map: $estilo-primario, $key: medida-primaria);
-    }
   }
 }

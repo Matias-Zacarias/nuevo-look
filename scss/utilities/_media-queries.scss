@@ -159,8 +159,8 @@
   }
 
   .body-envios {
-    .contenedor-footer {
-      position: map-get($map: $estilo-primario, $key: position-primario);
+    footer {
+      margin-top: 5rem;
     }
   }
 
@@ -192,12 +192,6 @@
     }
   }
 
-  .body-pagos {
-    .contenedor-footer {
-      position: map-get($map: $estilo-primario, $key: position-primario);
-      //width: 100%;
-    }
-  }
   /*-----------------------*/
 
   /*Sección-Contacto*/
