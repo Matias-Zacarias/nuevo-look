@@ -26,48 +26,46 @@ const boton = document.querySelector("#boton"),
     contenedor = document.querySelector("#contenedor-prendas");
 
 //Búsqueda
-function buscarProducto(arr, filtro) {
+function buscarProducto(arr, producto) {
     const encontrado = arr.find((el) => {
-        return el.nombre.includes(filtro);
+        return el.nombre.includes(producto);
     });
     return encontrado;
 }
 
-function filtrarProducto(arr, filtro) {
+function filtrarProducto(arr, producto) {
     const filtrado = arr.filter((el) => {
-        return el.nombre.includes(filtro);
+        return el.nombre.includes(producto);
     });
     return filtrado;
 }
 
-function crearHtml(arr) {
+function card(arr) {
     contenedor.innerHTML = "";
-    let html;
+    let cardHtml;
     for (const el of arr) {
-        html = `<div data-aos="zoom-in">
+        cardHtml = `<div data-aos="zoom-in">
         <p>${el.nombre}</p>
         <img class="prendas" src=" ../assets/prendas-ropa/${el.img}" alt="${el.nombre}">
         <p>$${el.precio}</p>
     </div>`;
-        //se la agrego al contenedor
-        contenedor.innerHTML += html;
+        //Se agrega al contenedor de prendas
+        contenedor.innerHTML += cardHtml;
     }
 }
 
-
-//crearHtml(productos);
+card(productos);
 
 boton.addEventListener("click", () => {
     const filtrados = filtrarProducto(productos, ingreso.value);
     console.log(filtrados);
-    crearHtml(filtrados);
+    card(filtrados);
 });
 
 
 //Guardar en el carrito
-const btnMostrar = document.querySelector(".btn-mostrar"),
-    btnEliminar = document.querySelector(".btn-eliminar"),
-    agregar = document.querySelector(".agregar-carrito"),
+const botonMostrar = document.querySelector(".boton-mostrar"),
+    botonEliminar = document.querySelector(".boton-eliminar"),
     botonEspecifico = document.querySelector("#produc-espec")
 
 const carrito = []
@@ -87,16 +85,20 @@ botonEspecifico.addEventListener("click", () => {
 
 let bandera = false;
 
-btnMostrar.addEventListener("click", () => {
+botonMostrar.addEventListener("click", () => {
     if (!bandera)
-        crearHtml(carritoLS);
+        card(carritoLS);
     else {
         contenedor.innerHTML = "No tienes productos en el carrito";
+        bandera = false;
     }
 })
 
-btnEliminar.addEventListener("click", () => {
+botonEliminar.addEventListener("click", () => {
     localStorage.removeItem("carrito")
     contenedor.innerHTML = "El carrito se encuentra vacío";
     bandera = true;
 })
+
+
+
