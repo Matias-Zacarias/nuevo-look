@@ -59,7 +59,7 @@ function crearHtml(arr) {
 crearHtml(productos);
 
 boton.addEventListener("click", () => {
-    const filtrados = buscarProducto(productos, ingreso.value);
+    const filtrados = filtrarProducto(productos, ingreso.value);
     console.log(filtrados);
     crearHtml(filtrados);
 });
@@ -77,26 +77,26 @@ const btnMostrar = document.querySelector(".btn-mostrar"),
     btnEliminar = document.querySelector(".btn-eliminar"),
     agregar = document.querySelector(".agregar-carrito");
 
-// const carrito = []
-// let carritoLS = JSON.parse(localStorage.getItem("carrito"));
-// localStorage.setItem("carrito", JSON.stringify(carrito))
+const carrito = []
+let carritoLS = JSON.parse(localStorage.getItem("carrito"));
+localStorage.setItem("carrito", JSON.stringify(carrito))
 
-// agregar.addEventListener("click", () => {
-//     const encontrado = buscarProducto(productos, ingreso.value);
-//     console.log(encontrado);
+agregar.addEventListener("click", () => {
+    const encontrado = buscarProducto(productos, ingreso.value);
+    console.log(encontrado);
 
-//     carrito.push(encontrado)
-//     localStorage.setItem("carrito", JSON.stringify(carrito))
-//     console.log(carrito);
-//     carritoLS = JSON.parse(localStorage.getItem("carrito"))
-//     console.log(carritoLS);
-// })
+    carrito.push(encontrado)
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+    console.log(carrito);
+    carritoLS = JSON.parse(localStorage.getItem("carrito"))
+    console.log(carritoLS);
+})
 
-// btnMostrar.addEventListener("click", () => {
-//     crearHtml(carritoLS);
-// })
+btnMostrar.addEventListener("click", () => {
+    crearHtml(carritoLS);
+})
 
-// btnEliminar.addEventListener("click", () => {
-//     localStorage.removeItem("carrito")
-//     contenedor.innerHTML = "No tienes productos en el carrito";
-// })
+btnEliminar.addEventListener("click", () => {
+    localStorage.removeItem("carrito")
+    contenedor.innerHTML = "No tienes productos en el carrito";
+})
