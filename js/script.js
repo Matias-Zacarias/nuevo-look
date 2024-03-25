@@ -44,13 +44,12 @@ function crearHtml(arr) {
     contenedor.innerHTML = "";
     let html;
     for (const el of arr) {
-        html = `<div class="card zoom-in">
+        html = `<div data-aos="zoom-in">
         <p>${el.nombre}</p>
         <img class="prendas" src=" ../assets/prendas-ropa/${el.img}" alt="${el.nombre}">
         <p>$${el.precio}</p>
-        <div class="card-action">
-            <button class="btn btn-agregar" id="${el.id}">Agregar al carrito</button>
-        </div>
+        <button class="agregar-carrito">Agregar al carrito</button>
+
     </div>`;
         //se la agrego al contenedor
         contenedor.innerHTML += html;
@@ -59,45 +58,45 @@ function crearHtml(arr) {
 
 crearHtml(productos);
 
-// boton.addEventListener("click", () => {
-//     const filtrados = filtrarProducto(productos, ingreso.value);
-//     console.log(filtrados);
-//     crearHtml(filtrados);
-// });
-
-let filtrados;
-
 boton.addEventListener("click", () => {
-    filtrados = filtrarProducto(productos, ingreso.value)
+    const filtrados = buscarProducto(productos, ingreso.value);
     console.log(filtrados);
     crearHtml(filtrados);
-})
+});
+
+// let filtrados;
+
+// boton.addEventListener("click", () => {
+//     filtrados = filtrarProducto(productos, ingreso.value)
+//     console.log(filtrados);
+//     crearHtml(filtrados);
+// })
 
 //Guardar en el carrito
 const btnMostrar = document.querySelector(".btn-mostrar"),
     btnEliminar = document.querySelector(".btn-eliminar"),
-    agregar = document.querySelector(".btn-agregar");
+    agregar = document.querySelector(".agregar-carrito");
 
-const carrito = []
-let carritoLS = JSON.parse(localStorage.getItem("carrito"));
-localStorage.setItem("carrito", JSON.stringify(carrito))
+// const carrito = []
+// let carritoLS = JSON.parse(localStorage.getItem("carrito"));
+// localStorage.setItem("carrito", JSON.stringify(carrito))
 
-agregar.addEventListener("click", () => {
-    const encontrado = buscarProducto(productos, ingreso.value);
-    console.log(encontrado);
+// agregar.addEventListener("click", () => {
+//     const encontrado = buscarProducto(productos, ingreso.value);
+//     console.log(encontrado);
 
-    carrito.push(encontrado)
-    localStorage.setItem("carrito", JSON.stringify(carrito))
-    console.log(carrito);
-    carritoLS = JSON.parse(localStorage.getItem("carrito"))
-    console.log(carritoLS);
-})
+//     carrito.push(encontrado)
+//     localStorage.setItem("carrito", JSON.stringify(carrito))
+//     console.log(carrito);
+//     carritoLS = JSON.parse(localStorage.getItem("carrito"))
+//     console.log(carritoLS);
+// })
 
-btnMostrar.addEventListener("click", () => {
-    crearHtml(carrito);
-})
+// btnMostrar.addEventListener("click", () => {
+//     crearHtml(carritoLS);
+// })
 
-btnEliminar.addEventListener("click", () => {
-    localStorage.removeItem("carrito")
-    contenedor.innerHTML = "No tienes productos en el carrito";
-})
+// btnEliminar.addEventListener("click", () => {
+//     localStorage.removeItem("carrito")
+//     contenedor.innerHTML = "No tienes productos en el carrito";
+// })
