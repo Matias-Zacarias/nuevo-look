@@ -48,15 +48,14 @@ function crearHtml(arr) {
         <p>${el.nombre}</p>
         <img class="prendas" src=" ../assets/prendas-ropa/${el.img}" alt="${el.nombre}">
         <p>$${el.precio}</p>
-        <button class="agregar-carrito">Agregar al carrito</button>
-
     </div>`;
         //se la agrego al contenedor
         contenedor.innerHTML += html;
     }
 }
 
-crearHtml(productos);
+
+//crearHtml(productos);
 
 boton.addEventListener("click", () => {
     const filtrados = filtrarProducto(productos, ingreso.value);
@@ -64,39 +63,40 @@ boton.addEventListener("click", () => {
     crearHtml(filtrados);
 });
 
-// let filtrados;
-
-// boton.addEventListener("click", () => {
-//     filtrados = filtrarProducto(productos, ingreso.value)
-//     console.log(filtrados);
-//     crearHtml(filtrados);
-// })
 
 //Guardar en el carrito
 const btnMostrar = document.querySelector(".btn-mostrar"),
     btnEliminar = document.querySelector(".btn-eliminar"),
-    agregar = document.querySelector(".agregar-carrito");
+    agregar = document.querySelector(".agregar-carrito"),
+    botonEspecifico = document.querySelector("#produc-espec")
 
 const carrito = []
-let carritoLS = JSON.parse(localStorage.getItem("carrito"));
 localStorage.setItem("carrito", JSON.stringify(carrito))
+let carritoLS = JSON.parse(localStorage.getItem("carrito"));
 
-agregar.addEventListener("click", () => {
-    const encontrado = buscarProducto(productos, ingreso.value);
-    console.log(encontrado);
-
-    carrito.push(encontrado)
+botonEspecifico.addEventListener("click", () => {
+    const productoEncontrado = buscarProducto(productos, ingreso.value);
+    //console.log(productoEncontrado);
+    carrito.push(productoEncontrado);
     localStorage.setItem("carrito", JSON.stringify(carrito))
-    console.log(carrito);
+    //console.log(carrito);
     carritoLS = JSON.parse(localStorage.getItem("carrito"))
+    console.log("Carrito LocalStorage");
     console.log(carritoLS);
 })
 
+let bandera = false;
+
 btnMostrar.addEventListener("click", () => {
-    crearHtml(carritoLS);
+    if (!bandera)
+        crearHtml(carritoLS);
+    else {
+        contenedor.innerHTML = "No tienes productos en el carrito";
+    }
 })
 
 btnEliminar.addEventListener("click", () => {
     localStorage.removeItem("carrito")
-    contenedor.innerHTML = "No tienes productos en el carrito";
+    contenedor.innerHTML = "El carrito se encuentra vacío";
+    bandera = true;
 })
