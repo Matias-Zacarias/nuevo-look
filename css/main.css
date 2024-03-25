@@ -126,6 +126,32 @@ footer a .logo-footer:hover {
   top: 0;
   z-index: 1;
 }
+.main-productos section .buscar {
+  background: rgb(70, 69, 155);
+  color: white;
+  margin: 0 0.5rem 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.main-productos section #ingreso {
+  padding: 0.3rem;
+  margin: 0 0.3rem 0 0;
+  border-radius: 0.5rem;
+}
+.main-productos section #boton {
+  background: #747d8c;
+  color: white;
+  margin: 0 0.5rem 1rem;
+  padding: 0.5rem;
+  border: none;
+}
+.main-productos section #produc-espec {
+  background: #00b894;
+  color: white;
+  margin: 0 0.5rem 1rem;
+  padding: 0.5rem;
+  border: none;
+}
 .main-productos section .contenedor-prendas {
   margin: 0 2rem 2rem;
   display: grid;
@@ -152,6 +178,20 @@ footer a .logo-footer:hover {
 .main-productos section .contenedor-prendas div .prendas {
   width: 100%;
   height: 100%;
+}
+.main-productos section .boton-container .boton-mostrar {
+  background-color: #00b894;
+  color: white;
+  margin: 0 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+.main-productos section .boton-container .boton-eliminar {
+  background-color: #ff3838;
+  color: white;
+  margin: 0 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
 }
 .main-productos section .contenedor-ubicacion {
   display: flex;
