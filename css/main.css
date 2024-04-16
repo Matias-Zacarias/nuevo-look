@@ -145,12 +145,25 @@ footer a .logo-footer:hover {
   padding: 0.5rem;
   border: none;
 }
+.main-productos section #boton:hover {
+  background: #8395a7;
+}
 .main-productos section #produc-espec {
-  background: #00b894;
+  background: #10ac84;
   color: white;
   margin: 0 0.5rem 1rem;
   padding: 0.5rem;
   border: none;
+}
+.main-productos section #produc-espec:hover {
+  background: #00b894;
+}
+.main-productos section .cargando {
+  display: none;
+}
+.main-productos section .activo {
+  display: flex;
+  justify-content: center;
 }
 .main-productos section .contenedor-prendas {
   margin: 0 2rem 2rem;
@@ -179,19 +192,35 @@ footer a .logo-footer:hover {
   width: 100%;
   height: 100%;
 }
-.main-productos section .boton-container .boton-mostrar {
+.main-productos section .contenedor-prendas div .btn-comprar {
+  background-color: #10ac84;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.main-productos section .contenedor-prendas div .btn-comprar:hover {
   background-color: #00b894;
+}
+.main-productos section .boton-container .boton-mostrar {
+  background-color: #10ac84;
   color: white;
   margin: 0 0.5rem 1rem;
   padding: 0.5rem 1rem;
   border: none;
 }
+.main-productos section .boton-container .boton-mostrar:hover {
+  background: #00b894;
+}
 .main-productos section .boton-container .boton-eliminar {
-  background-color: #ff3838;
+  background-color: #ee5253;
   color: white;
   margin: 0 0.5rem 1rem;
   padding: 0.5rem 1rem;
   border: none;
+}
+.main-productos section .boton-container .boton-eliminar:hover {
+  background: #ff3838;
 }
 .main-productos section .contenedor-ubicacion {
   display: flex;
