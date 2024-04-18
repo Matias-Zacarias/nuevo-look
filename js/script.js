@@ -89,14 +89,11 @@ botonEspecifico.addEventListener("click", () => {
 let bandera = false;
 
 botonMostrar.addEventListener("click", () => {
-    if (!bandera)
-        card(carritoLS);
-    else {
-        setTimeout(() => {
-            contenedor.innerHTML = "No tienes productos en el carrito";
-            bandera = false;
-        }, 1000)
-    }
+    //Usando operador ternario
+    !bandera ? card(carritoLS) : setTimeout(() => {
+        contenedor.innerHTML = "No tienes productos en el carrito";
+        bandera = false;
+    }, 1000)
 })
 
 botonEliminar.addEventListener("click", () => {
@@ -105,7 +102,7 @@ botonEliminar.addEventListener("click", () => {
     setTimeout(() => {
         contenedor.innerHTML = "El carrito se encuentra vacío";
         bandera = true;
-    }, 1000)
+    }, 500)
 })
 
 
